@@ -20,6 +20,7 @@ public class EmployeeService {
         return employeeRepository.findById(id);
     }
 
+
     public Iterable<Employee> getEmployees() {
         return employeeRepository.findAll();
     }
@@ -32,5 +33,4 @@ public class EmployeeService {
         Employee savedEmployee = employeeRepository.save(employee);
         return savedEmployee;
     }
-
 }
